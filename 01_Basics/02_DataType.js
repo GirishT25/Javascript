@@ -25,7 +25,8 @@ console.log(b); // it return the undefined
             // -> let obj = {namw : "Girish" , age : 21}
 // Function : It is for use for once creation and  the multiple execution 
 // Data : Data Object 
-// RefExp :  let re = /a/b/c ; use for the validating purpose 
+// RefExp :  let re = /a/b/c ; use for the validating purpose
+// Note  :  All the nonprimitive return dataype value as the object  
 
 
 // let socre = true;
@@ -116,3 +117,33 @@ console.log(`the value of the y : ${y} and the value of the x : ${x}`); // this 
  console.log(`the value of the m : ${m} and the value of the n : ${n}`);
  // this prefix before ++ do the thing like it increase the operator and then return the value
  
+
+ const outside = null;
+ const indefined = undefined
+ const bigNumber = 123456789123456789n;
+ console.log(typeof bigNumber);
+ console.log(typeof outside);
+ console.log(typeof indefined);
+ 
+
+const myFunction = function(){
+    console.log('Hello World');
+    
+}
+myFunction();
+console.log(typeof myFunction); // it return the function as the output as the object it's more like the object function
+
+const Arr = [1,"Hello world" , true , 4.4];
+Arr.forEach(element => {
+    console.log(element);
+    
+});
+
+console.log( typeof Arr);
+const myObj = {
+    name : "Girish",
+    age : 21,
+    gender : "Male"
+}
+
+console.log(myObj)
