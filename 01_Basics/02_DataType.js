@@ -99,43 +99,43 @@ let str1 = "Girish";
 let str2 = " Thorat";
 
 let conactString = str1 + str2 ;
-console.log(conactString);
+// console.log(conactString);
 
 let subString = str1 - str2;
-console.log(subString); // It return NaN
+// console.log(subString); // It return NaN
 
 
 let x = 5 ;
 const y = x++;
-console.log(`the value of the y : ${y} and the value of the x : ${x}`); // this return the value of the x = 6 and the y = 5
+// console.log(`the value of the y : ${y} and the value of the x : ${x}`); // this return the value of the x = 6 and the y = 5
  // this happen because of the ++ operator It first return the value and then increase the value so
  // in the x the increment values has gone
  // in the y the x value is gone
 
  let m = 2 ;
  const n = ++m;
- console.log(`the value of the m : ${m} and the value of the n : ${n}`);
+//  console.log(`the value of the m : ${m} and the value of the n : ${n}`);
  // this prefix before ++ do the thing like it increase the operator and then return the value
  
 
  const outside = null;
  const indefined = undefined
  const bigNumber = 123456789123456789n;
- console.log(typeof bigNumber);
- console.log(typeof outside);
- console.log(typeof indefined);
+//  console.log(typeof bigNumber);
+//  console.log(typeof outside);
+//  console.log(typeof indefined);
  
 
 const myFunction = function(){
-    console.log('Hello World');
+    // console.log('Hello World');
     
 }
 myFunction();
-console.log(typeof myFunction); // it return the function as the output as the object it's more like the object function
+// console.log(typeof myFunction); // it return the function as the output as the object it's more like the object function
 
 const Arr = [1,"Hello world" , true , 4.4];
 Arr.forEach(element => {
-    console.log(element);
+    // console.log(element);
     
 });
 
@@ -146,4 +146,58 @@ const myObj = {
     gender : "Male"
 }
 
-console.log(myObj)
+// console.log(myObj)
+// As the type of the non primitive is the object and h 
+
+const ID1 = Symbol('123'); // It always return the unique value for the variable
+const ID2 = Symbol('123');
+console.log(ID1 === ID2);  // This return the false statement
+// const add = 45;
+console.log(typeof add); // If we try to typeof of the var where it is not declare the return type will be the undefined
+
+
+const myObj1 = {
+    username : "Girish",
+    gmail : "thoratgirish286@gmail.com"
+}
+console.log(myObj1);
+ myObj1.gmail = "abcd@gmail.com";
+console.log(myObj1);
+
+ myObj1.gmail = "xyz@gmail.com";
+
+console.log(myObj1);
+
+
+// -------------------------------String methods----------------------------------
+console.log("----------String-------Methods---------")
+const strr = "Girish";
+console.log(strr.length);
+            
+const game = "God Of War ";
+console.log(game.length);
+console.log(game.charAt(2));
+console.log(game.indexOf('W'));
+console.log(game.includes("War"));
+console.log(game.slice(0 , 4));
+console.log(`Hello this is an old game ${game}`);
+const usingSubstr =  game.substring(0 , 4)
+console.log(usingSubstr);
+const useSlice = game.slice(-3);
+console.log(useSlice);
+const useReplace =  game.replace("War" , "Hell");
+console.log(useReplace);
+console.log(game.trim()); // It remove the extra space
+console.log(game.split('-'));
+
+
+const var4 = null;
+let  var5 ;
+console.log(typeof var4);
+console.log(typeof var5);
+
+
+
+
+
+
